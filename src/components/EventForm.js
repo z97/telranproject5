@@ -2,14 +2,13 @@ import React, {useState} from 'react';
 import {Button} from "react-bootstrap";
 import ButtonPay from "./UI/buttons/ButtonPay";
 
-const EventForm = ({create}) => {
+const EventForm = (props) => {
     const [application, setApplication] = useState({name: '', cellphone: '', email: '', quantity: ''})
     const addNewApplication = (e) => {
         e.preventDefault()
         const newApplication = {
             ...application, id: Date.now()
         }
-        create(newApplication)
         setApplication({name: '', cellphone: '', email: '', quantity: ''})
     }
     return (
