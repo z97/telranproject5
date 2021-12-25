@@ -7,8 +7,9 @@ const SmallEvent = (props) => {
             <div>
                 {props.event.body}
             </div>
+            <div></div>
             <div>
-                <button onClick={() => router.push(`/`)}
+                <button onClick={}>подробнее</button>
             </div>
         </div>
     );
