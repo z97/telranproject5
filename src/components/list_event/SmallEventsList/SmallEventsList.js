@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-
+import json from './package.json'
 
 
 class SmallEventsList extends React.Component {
@@ -13,17 +13,21 @@ class SmallEventsList extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://api.binance.com/api/v3/depth?limit=100&symbol=BTCUSDT')
+        fetch(`./package.json`,
+            {headers : {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }}
+        )
             .then(response => response.json())
             .then(json => {
-                this.setState({ jsonReturnedValue: json });
+                this.setState({jsonReturnedValue: json });
             });
     }
 
     render() {
         return (
             <div>
-                <h1>{ this.state.jsonReturnedValue }</h1>
             </div>
         );
     }

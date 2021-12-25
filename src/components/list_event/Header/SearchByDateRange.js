@@ -20,7 +20,6 @@ class SearchByDateRange extends Component {
                 <h2>Date Range:</h2>
                 <p>From: <input type="date" id="datepicker"/></p>
                 <p>To: <input type="date" id="datepicker"/></p>
-
             </div>
         )
     }
