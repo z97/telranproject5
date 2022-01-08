@@ -1,8 +1,10 @@
 import React from 'react';
+import image from "../img/svyatoslav.jpg"
 
 const About = () => {
     return (
         <div>
+            <img src={image} alt="Image"/>
             <p><h1>Cветослав Брестовицкий</h1></p>
             <p><h3>Лицензированный гид (верифицирован israguru.com)</h3></p>
             <p><h1>Кто я</h1></p>
@@ -25,6 +27,16 @@ const About = () => {
             <button type="button" className="btn btn-primary">
                 Подробнее...
             </button>
+            <p><h1>Я могу</h1></p>
+            <p><h3>Также в индивидуальном порядке могу провести экскурсии по следующим городам:</h3></p>
+            <p><h3>* Иерусалим</h3></p>
+            <p><h3>* Тель-Авив</h3></p>
+            <p><h3>* Кейсария</h3></p>
+            <p><h1>Cвязаться со мной</h1></p>
+            <p><h3>Телефон: 972 555 55 55</h3></p>
+            <p><h3>Cоцсети и мессенджеры:</h3></p>
+
+
         </div>
 
     );
